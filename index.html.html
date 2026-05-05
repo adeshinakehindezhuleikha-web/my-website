@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Computer Science Portal</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5e9);
+        color: white;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        text-align: center;
+        padding: 25px;
+        background: rgba(0,0,0,0.4);
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(10px);
+    }
+
+    nav {
+        text-align: center;
+        padding: 10px;
+        background: rgba(0,0,0,0.3);
+    }
+
+    nav a {
+        color: white;
+        margin: 5px;
+        text-decoration: none;
+        padding: 8px 12px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 6px;
+    }
+
+    nav a:hover {
+        background: #38bdf8;
+        color: black;
+    }
+
+    section {
+        max-width: 900px;
+        margin: auto;
+        padding: 50px 20px;
+    }
+
+    .card {
+        background: rgba(255,255,255,0.08);
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    h2 {
+        color: #38bdf8;
+        border-left: 5px solid #38bdf8;
+        padding-left: 10px;
+    }
+
+    ul, ol {
+        line-height: 1.8;
+    }
+
+    /* FORM STYLES */
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: auto;
+        margin-right: 8px;
+    }
+
+    button {
+        padding: 10px;
+        width: 100%;
+        background: #38bdf8;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background: #0ea5e9;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏫 Computer Science Department Portal</h1>
+    <p>Federal University School System</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#lists">Lists</a>
+    <a href="#form">Student Form</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <h2>Welcome</h2>
+    <div class="card">
+        <p>This is a Computer Science learning portal built using HTML only.</p>
+    </div>
+</section>
+
+<!-- LISTS -->
+<section id="lists">
+    <h2>📚 Academic Lists</h2>
+
+    <div class="card">
+        <h3>Days of the Week</h3>
+        <ul>
+            <li>Monday</li><li>Tuesday</li><li>Wednesday</li>
+            <li>Thursday</li><li>Friday</li><li>Saturday</li><li>Sunday</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Months of the Year</h3>
+        <ol>
+            <li>January</li><li>February</li><li>March</li>
+            <li>April</li><li>May</li><li>June</li>
+            <li>July</li><li>August</li><li>September</li>
+            <li>October</li><li>November</li><li>December</li>
+        </ol>
+    </div>
+</section>
+
+<!-- FORM -->
+<section id="form">
+    <h2>🧑‍🎓 Student Registration Form</h2>
+
+    <div class="card">
+
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+
+        <!-- DROPDOWN MENU -->
+        <label>Level:</label>
+        <select>
+            <option>-- Select Level --</option>
+            <option>100 Level</option>
+            <option>200 Level</option>
+            <option>300 Level</option>
+            <option>400 Level</option>
+        </select>
+
+        <!-- RADIO BUTTONS -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <br><br>
+
+        <!-- CHECKBOXES -->
+        <label>Programming Skills:</label><br>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JavaScript
+        <input type="checkbox"> Python
+
+        <br><br>
+
+        <!-- ANOTHER DROPDOWN -->
+        <label>Department Interest:</label>
+        <select>
+            <option>Computer Science</option>
+            <option>Software Engineering</option>
+            <option>Cyber Security</option>
+            <option>Data Science</option>
+        </select>
+
+        <br>
+
+        <button>Submit Registration</button>
+
+    </div>
+</section>
+
+</body>
+</html>
